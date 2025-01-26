@@ -7,7 +7,10 @@ const Card = ({ article, index }) => {
    className="flex flex-col py-3 rounded-2xl justify-center items-center relative bg-slate-800/40 p-1 gap-1"
    key={index}
   >
-   <h1 className="md:text-[1.5rem] text-[1.3rem] title title text-right text-blue-200 text-shadow">
+   <h1
+    dir="rtl"
+    className="md:text-[1.5rem] text-[1.3rem] title title text-right text-blue-200 text-shadow"
+   >
     {article.title}
    </h1>
    <img className="w-[70%] rounded-2xl" src={article.image} alt="picture" />

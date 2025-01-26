@@ -47,7 +47,9 @@ const Article = () => {
    {error && <p className="text-red-500">فشل تحميل الأخبار</p>}
    {article.title && (
     <>
-     <h1 className="text-3xl text-blue-400">{article.title}</h1>
+     <h1 dir="rtl" className="text-3xl text-blue-400">
+      {article.title}
+     </h1>
      <p className="text-xl text-right">{article.summary}</p>
      <img className="my-3 w-[50%]" src={article.img} alt="image" />
      <p className="text-right text-xl bg-slate-700 p-2 rounded-2xl text-shadow">
